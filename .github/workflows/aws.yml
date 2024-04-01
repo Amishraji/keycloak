@@ -66,4 +66,4 @@ jobs:
       - name: Running Ingress.yaml
         run: |
           kubectl apply -f ${{ env.EKS_ingress }}
-          kubectl get ingress ingress-demo
+          kubectl get ingress ingress
