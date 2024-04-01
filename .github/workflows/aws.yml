@@ -47,7 +47,7 @@ jobs:
           ECR_REPOSITORY: "app-demo"
           IMAGE_TAG: keycloak
         run: |
-          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
+          docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG keycloak/.
           docker push $ECR_GISTRY/$ECR_REPOSITORY:$IMAGE_TAG
           echo "::set-output name=image::$ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG"
         
