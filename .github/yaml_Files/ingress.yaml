@@ -4,7 +4,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: "nginx"
     nginx.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-west-2:992382462614:certificate/a12d58c5-ecb4-4254-9839-877d1a8f928d
-  name: ingress-service
+  name: ingress
 spec:
   rules:
   - host: keycloak.route53testdemo.fun
