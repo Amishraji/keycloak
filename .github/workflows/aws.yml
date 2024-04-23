@@ -5,7 +5,7 @@ on:
       - main
 env:
   AWS_REGION: us-west-2
-  EKS_CLUSTER: prod-eks
+  EKS_CLUSTER: my-eks
   CONTAINER_NAME1: keycloak
   EKS_keycloak: .github/yaml_Files/keycloak.yaml
   EKS_ingress: .github/yaml_Files/ingress.yaml
